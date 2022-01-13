@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .intro {
+            width: 60%; 
+            margin: auto;
+            padding : 20px 0;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+        form {
+            width: 60%; 
+            margin: auto;
+        }
+        fieldset{
+            width : 80%;
+        }
+        audio {
+            width : 55%;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MY FORM</h1>
+    <div class="music">
+        <audio controls loop = "true">
+            <source src = "../audio/NgheNhacMp3.Org - 1 Year, 2 Months, And 20 Days (Sword Art Online).mp3" type = "audio/mpeg">
+        </audio>
+    </div>
+    <p class = "intro"> <strong>Note: </strong> I don't code the backend of this form, so I can't store your personal information, this form is just a small project.</p>
+    <form action="" method = "GET">
+        <!-- LABEL & TEXT -->
+        <label for="name">Name: </label>
+        <input type="text" name="" id="name" placeholder="Enter name" maxlength="6">
+        <!-- VALUE -->
+        <input type="text" value = "MTKH01">
+        <input type="text" value = "MTKH01" readonly>
+        <input type="text" value = "MTKH01" disabled>
+        <!-- NUMBER -->
+        <br><br>
+        <label for="number">ID Student: </label>
+        <input type="number" name="number" id="number" placeholder = "Enter ID" maxlength="6">
+        <br><br>
+        <!-- EMAIL -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder = "Enter email">
+        <!-- Password -->
+        <input type="password" name="password" id="password" placeholder = "Enter password">
+        <br>
+        <br>
+        <!-- REQUIRED -->
+        <label for="address">Address: </label>
+        <input type="text" name="address" id="address" placeholder="Enter address" size="98" required>
+        <br><br>
+        <!-- TELEPHONE -->
+        <label for="tel">Phone: </label>
+        <input type="tel" pattern = "[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder = "0123-456-789" id = "tel">
+        <!-- DATE -->
+        <input type="date" name="" id="">
+        <!-- FILE -->
+        <input type="file" name="" id="">
+        <br><br>
+        <!-- TEXT AREA -->
+        <textarea name="" id="" cols="100" rows="10" placeholder="Message" required></textarea>
+        <p>Choose the transport which you most frequently use to go to school: </p>
+         <!-- SELECT -->
+         <select name="" id="">
+            <option value="">Chọn loại xe</option>
+            <optgroup>
+                <option value="">Chọn xe máy</option>
+                <option value="">Honda</option>
+                <option value="">Yamaha</option>
+            </optgroup>
+            <optgroup>
+                <option value="">Chọn xe đạp</option>
+                <option value="">Martin</option>
+                <option value="">Asama</option>
+            </optgroup>
+        </select>
+        <!-- COMBOBOX/ DROPDOWN -->
+        <p>Choose your semester subject: </p>
+        <!-- CHECKBOX -->
+        <input type="checkbox" name="subject" id="math" checked>
+        <label for="math">Math</label>
+        <input type="checkbox" name="subject" id="literature">
+        <label for="literature">Literature</label>
+        <input type="checkbox" name="subject" id="english">
+        <label for="english">English</label>
+        <input type="checkbox" name="subject" id="physics">
+        <label for="physics">Physics</label>
+        <input type="checkbox" name="subject" id="biology">
+        <label for="biology">Biology</label>
+        <!-- RADIO -->
+        <p>Choose only one optional subject: </p>
+        <input type="radio" name="subject" id="art" checked>
+        <label for="art">Art</label>
+        <input type="radio" name="subject" id="music">
+        <label for="music">Music</label>
+        <input type="radio" name="subject" id="history">
+        <label for="history">History</label>
+        <input type="radio" name="subject" id="geography">
+        <label for="geography">Geography</label>
+        <br><br>
+        <!-- LEGEND -->
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <input type="text" placeholder="Link facebook" size = "105">
+        </fieldset>
+        <br>
+        <!-- BUTTON SUBMIT -->
+        <button type="submit">Submit</button>
+        <!-- Not load page -->
+        <!-- <input type="button" value="Button_button"> -->
+        <!-- load page -->
+        <!-- <input type="submit" value="Button"> -->
+         <!-- Reset  -->
+        <input type="reset" value="Reset">
+    </form>
+    <br>
+</body>
+</html>
